@@ -73,7 +73,7 @@
 
 
 body{
-	background-image: url("../images/Jamaica_images/IMG_1051.jpg");
+	background-image: url("../images/Jamaica_images/IMG_1051.JPG");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,4 +221,5 @@ body{
   text-align: center;
   font-family: 'header_font', sans-serif;
   font-size: clamp(1.5rem, 3vw, 3rem);
+
 }
