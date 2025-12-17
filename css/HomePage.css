@@ -41,14 +41,27 @@
     padding: 0 1rem 2rem;
   }
 
-  .intro {
-    padding: 1.25rem 1.5rem;
-  }
+ .intro-wrapper {
+  display: flex;  
+  justify-content: flex-start;
+  align-items: flex-start; 
+}
 
-  .intro p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+.intro {
+  display: inline-block;   
+  background-color: #FCF6D9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: black;
+  padding: 0.5rem 1rem; 
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+.intro p {
+  margin: 0;
+  line-height: 1.5;
+}
 
   .home_image {
     order: -1;
