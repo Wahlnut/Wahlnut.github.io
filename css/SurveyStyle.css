@@ -48,7 +48,7 @@
 }
 
 body{
-	background-image: url("../images/Jamaica_images/IMG_1051.jpg");
+	background-image: url("../images/Jamaica_images/IMG_1051.JPG");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,4 +118,5 @@ body{
   background-color: #FCF6D9;
   border-radius: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
 }
