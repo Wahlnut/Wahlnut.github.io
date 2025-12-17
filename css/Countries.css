@@ -1,0 +1,224 @@
+/* ===== Countries ====== */
+@media (max-width: 768px) {
+
+  body {
+    background-attachment: scroll;
+    height: auto;
+  }
+
+  .content {
+    margin-top: 5rem;
+  }
+
+  .grid {
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .country_image {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .country_image figure,
+  .country_image .country_text {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .country_image:nth-child(even) figure,
+  .country_image:nth-child(even) .country_text {
+    grid-column: 1;
+  }
+
+  .country_image img,
+  .country_image video {
+    aspect-ratio: auto;
+    max-height: 60vh;
+  }
+
+  .country_text {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .country_text p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  .country_titles {
+    font-size: 2rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .nav a {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@font-face {
+  font-family: 'header_font';
+  src: url('../fonts/Summer_Sunshine.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body{
+	background-image: url("../images/Jamaica_images/IMG_1051.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 2000px;
+}
+.grid {
+  display: grid;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.country_image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.country_image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.country_image video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3; 
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.country_image figure,
+.country_image .country_text {
+  grid-row: 1;
+}
+
+.country_image figure {
+  grid-column: 1;
+  margin: 0;
+}
+
+.country_image .country_text {
+  grid-column: 2;
+}
+
+.country_image:nth-child(even) figure {
+  grid-column: 2;
+}
+
+.country_image:nth-child(even) .country_text {
+  grid-column: 1;
+}
+.country_text {
+  padding: 1rem 2rem;
+  background-color:#FCF6D9;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(100%, 1100px);
+  padding: 0.4rem 1rem; 
+  background-color: #CF4B00;
+  z-index: 1000;
+  box-shadow: 0 .25rem 1rem rgba(0,0,0,0.2);
+  border-radius: 0 0 12px 12px;
+}
+
+
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.95rem;
+  color: #9CC6DB;
+  text-decoration: none;
+  background-color: #444;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: #000;
+  transform: translateY(-1px);
+}
+
+.nav a.active {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.nav li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.content {
+  margin-top: 4rem;
+}
+
+.country_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0.1rem;
+}
+.country_titles{
+  background-color:#FCF6D9 ;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'header_font', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
